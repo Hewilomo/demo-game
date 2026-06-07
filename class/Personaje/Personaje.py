@@ -1,3 +1,6 @@
+#Librerias
+from Class.Motor import Engine as eng
+
 # Base de creación de clases
 # Atributos
 class Personaje:
@@ -12,6 +15,7 @@ class Personaje:
 # Metodos
 def crearPersonaje(self, nombre):
     nombrePersonaje = nombre
+    
     pass
 
 def intercambiarDineroPorVida(self):

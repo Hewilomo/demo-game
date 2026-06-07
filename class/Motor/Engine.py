@@ -1,14 +1,16 @@
-# Library
-from style import mapa as map
-# Atributos
-class Engine:
-    
-    def __init__(self):
-        pass
-    
-# Getter y Setter
+#Librerias
+import json
+import os
+#Metodos
+def guardarDatos(datos, nombreArchivo):
+    with open(nombreArchivo, 'w') as archivo:
+        json.dump(datos, archivo)
 
-# Metodos
-    @staticmethod
-    def cargarMapa():
-        return map.mapa()
+def cargarDatos(nombreArchivo):
+    if os.path.exists(nombreArchivo):
+        with open(nombreArchivo, 'r') as archivo:
+            datos = json.load(archivo)
+            return datos
+    else:
+        return None
+    
