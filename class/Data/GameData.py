@@ -14,4 +14,4 @@ class GameData:
         self.cargarDatos()
         
     def cargarDatos(self):
-        
+        pass
